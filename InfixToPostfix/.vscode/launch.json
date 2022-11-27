@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/HW/C/InfixToPostfix",
-      "program": "d:/HW/C/InfixToPostfix/build/Debug/outDebug",
+      "cwd": "d:/HW/C/考古題/InfixToPostfix",
+      "program": "d:/HW/C/考古題/InfixToPostfix/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
