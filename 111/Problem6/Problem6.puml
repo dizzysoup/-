@@ -1,0 +1,25 @@
+@startuml Problem5 
+    class Pet{
+        #_weight:int
+        #_name:string
+        + Pet(weight:double,name:string)<<construstor>>
+        + getWeight():int
+        + getName(): string
+    }
+
+    class Cat{
+        - _toy:vector<string>
+        - sortedByAlphabet():void
+        + Cat(weight:double,name:string)<<construstor>>
+        +addToy(toy:string):void
+        +getToy(index:int):string
+    }
+
+    class Bird{
+        - canFly:bool
+        +Bird(weight:double,name:string)<<construstor>>
+    }
+
+    Pet <|-- Cat
+    Pet <|-- Bird
+@enduml
