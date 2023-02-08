@@ -1,0 +1,32 @@
+@startuml Problem5 UML
+class Base {
+    #value:string
+    #base:int
+    +set(s:string,b:int)
+    +name():void
+    +transferToDecimal():int
+    +app():void
+}
+class Binary {
+    +name():void
+    +transferToDecimal():int
+}
+class Octal {
+    -value:string
+    -base:int
+    +name():void
+    +transferToDecimal():int
+    +Octal()<<constroctor>>
+    +app():void
+}
+class Hexadecimal{
+    +name():void
+    +transferToDecimal():int
+    + app():void
+}
+
+Base <|-- Binary
+Base <|-- Octal
+Base <|-- Hexadecimal
+
+@enduml
