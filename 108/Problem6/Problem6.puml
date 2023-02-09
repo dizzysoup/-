@@ -1,0 +1,26 @@
+@startuml Problem5 UML
+    class Card {
+        - value : int 
+        - suit : string
+        + Card(value:int, suit:string)
+        +getScore();
+    }
+    class PokerGame {
+        - human : Player* 
+        - computer : Player*
+        - init()
+        + PokerGame()<<constructor>>
+        + deal(inCards:vector<Card*>)
+        + Play(): string
+    }
+    class Player {
+        - cards: vector<cards*>
+        + Player() <<constructor>>
+        + getRank():int
+        + addCard(card:Card*):void
+    }
+
+    PokerGame o-- Player
+    Player ..> Card
+    PokerGame ..> Card
+@enduml
